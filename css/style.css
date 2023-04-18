@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s;
+}
+body{
+    background-color: rgb(159, 88, 159);
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 4rem;
+    color: rgb(230, 218, 218);
+    text-shadow: 5px 5px 5px black;
+}
+
+.cont{
+    margin: auto;
+    display: flex;
+    background-color: hotpink;
+    width: 60vw;
+    margin-top: 5rem;
+    border: 9px solid black;
+    border-radius: 5rem;
+    padding: 2rem;
+    transition: all 1s;
+    
+}
+.cont img{
+    height: 40vh;
+    margin: 30px;
+
+}
+.cont h1{
+    font-size: 1.9rem;
+    text-shadow: 1px 1px 5px rgb(160, 172, 24);
+}
+.celly{
+    margin-left: 2.3rem;
+    
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mid h1{
+    display: none;
+}
+/* input box and button */
+input {
+    text-align: center;
+
+}
+
+.cont input{
+    margin-top: 5rem;
+    border: 3px solid black;
+    height: 2rem;
+border-radius: 0.5rem;
+background-image: linear-gradient(to right,rgba(255, 128, 0, 0.49),rgba(0, 0, 255, 0.505));
+font-size: 1rem;
+font-weight: bold;
+font-family:Georgia, 'Times New Roman', Times, serif;
+padding: 3px;
+width: 16.5rem;
+
+}
+.cont input::placeholder{
+    color: rgba(0, 0, 0, 0.794);
+    text-align: center;
+    
+}
+.cont button{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border: 3px solid black;
+    padding: 0.5rem;
+    border-radius: 9px;
+    background-color:chocolate;
+transition: all 0.2s;
+cursor: pointer;
+}
+.cont button:hover{
+    transform: scale(1.07);
+}
+.common{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#reset{
+display: none;
+}
+#ans{
+    margin-top: 5rem;
+    display: none;
+    background: none;
+    border: 0;
+    outline: none;
+ justify-content: center;
+    align-items: center;
+    height: 4rem;
+    font-size: 1.4rem;
+color:midnightblue; 
+text-shadow: 0 0 6px white;   
+}
+#ans::placeholder{
+    font-family: sans-serif;
+    margin: auto;
+    text-shadow: 1px 2px 8px yellow;
+}
+/*----------------------------------------- MEDIA QUERIESS ---------------------------- */
+@media screen and (max-width:1415px) {
+    .cont{
+
+    width: 900px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    header{
+        width: 900px;
+    }
+    .cont{
+     height: 30rem;
+     padding: 0;
+    }
+   .mid img{
+        height: 15rem;
+        width: 13rem;
+    }
+    .common h1{
+        font-size: 2.5rem;
+    }
+}
